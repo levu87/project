@@ -1,0 +1,43 @@
+.breadcrumb-wrapper
+	position: relative
+	z-index: 99
+	@media (max-width: 575.9px)
+		display: none
+	.breadcrumb-section 
+		display: flex
+		width: 100%
+	.breadcrumb
+		padding: 20px 0
+		margin-left: auto
+		display: flex
+		align-items: center
+		height: 100%
+		@media (min-width: 1025px)
+			max-width: 990px
+		@media (min-width: 1200px)
+			max-width: 1140px
+		@media (min-width: 1366px)
+			max-width: 1260px
+		li
+			margin-right: 10px
+			list-style: none
+			a
+				font-size: 14px
+				color: #333333
+				font-family: "Livvic"
+
+			// &:first-child
+			// 	a
+			// 		font-size: 0
+			// 		&:before
+			// 			content: '\f2dc'
+			// 			font-family: 'Material Design Icons'
+			// 			font-size: 20px
+			// 			color: white
+			+ li
+				&:before
+					content: '\e876'
+					font-family: 'Linearicons-Free'
+					font-size: 12px
+					color: #333333
+					margin-right: 10px

@@ -1,0 +1,42 @@
+.col-9.contain 
+    .tab-content#tab-1.active
+        .row 
+            .col-lg-8
+                .form-wrap 
+                    h2.main-title Thông tin cá nhân 
+                    .form-group
+                        label(for="" ) họ tên 
+                        input.form-control(type='text' required='required')
+                    .form-group
+                        label(for="" ) Giới thiệu
+                        textarea(name="", cols="30", rows="10")
+                .form-wrap 
+                    h2.main-title thông tin liên hệ
+                    .form-group
+                        label(for="" ) Số điện thoại 
+                        input.form-control(type='phone' required='required')
+                    .form-group
+                        label(for="" ) Email
+                        input.form-control(type='email' required='required')
+                .button-submit
+                    button(type="submit") Cập nhật
+            .col-md-4
+                #msg
+                    form#image-form(method='post')
+                        input.file(type='file', name='img[]', accept='image/*')
+                        .input-group.my-3
+                            input#file.form-control(type='text', disabled='', placeholder='Upload File')
+                        .input-group-append
+                            button.browse.btn.btn-primary(type='button') browser
+                    .img-wrapper
+                        img#preview.img-thumbnail(src='https://placehold.it/150x150')
+    .tab-content#tab-2
+        .head
+            .select
+                .custom-select
+                    select
+                        option(value="1") Sắp xếp theo
+                        option(value="2") mới nhất
+                        option(value="3") giá cao nhất
+            .button-post
+                a(href="") tạo tin mới

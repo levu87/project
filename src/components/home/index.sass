@@ -1,0 +1,510 @@
+.home-banner-1 
+    position: relative
+    .banner-img 
+        height: 100vh
+        width: auto 
+        position: relative
+        overflow: hidden
+        @keyframes zoomin 
+            0% 
+                transform: scale(1)
+            50% 
+                transform: scale(1.5)
+            100% 
+                transform: scale(1)
+            
+        @-webkit-keyframes zoomout 
+            0% 
+                transform: scale(1)
+            50% 
+                transform: scale(0.67)
+            100% 
+                transform: scale(1)
+            
+        @media (max-width: 768px)
+            height: 45rem 
+        img
+            width: 100%
+            height: 100% 
+            background-size: auto
+            background-attachment: fixed
+            background-repeat: repeat
+            position: relative
+            -webkit-user-select: none
+            -moz-user-select: none
+            -ms-user-select: none
+            -webkit-animation: zoomin 35s ease-in infinite
+            animation: zoomin 35s ease-in infinite
+            transition: all .5s ease-in-out
+    .search-wrapper
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 100%
+        @media (max-width: 768px)
+            top: 70%
+            .big-title 
+                margin-bottom: 3rem!important
+                font-size: 2.8rem!important
+        .big-title 
+            text-align: center 
+            font-size: 3.6rem
+            color: #ffffff 
+            text-transform: capitalize
+            margin-bottom: 8rem
+        .searchbox
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+
+            .search-inp
+                width: calc(80% - 20px)
+            @media (max-width: 768px)
+                justify-content: center
+                .search-inp
+                    width: 100%
+                    margin-bottom: 1rem 
+                .submit 
+                    width: 100%!important
+                    display: inline-block
+            .submit 
+                width: 20% 
+            input 
+                width: 100%
+            input[type="text"]
+                background: #ffffff 
+                border: 1px solid #d1ad5b
+                padding: 1rem 2rem
+            input[type="submit"]
+                display: flex 
+                justify-content: center
+                align-items: center
+                height: 44px
+                background: $bg 
+                color: #fff 
+                font-size: 1.8rem 
+                font-weight: 600
+                text-transform: uppercase
+                border: none
+                transition: all .4s ease-in-out
+                &:hover 
+                    box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.4)
+// section-2
+.home-project
+    padding: 5rem 0
+    background: #f2f2f2
+    h2 
+        margin-bottom: 3rem 
+    .list-item 
+        width: 100%
+        .item
+            float: left
+            position: relative
+            overflow: hidden
+            &:hover  
+                &:after 
+                    opacity: 1!important
+                .caption 
+                    opacity: 1 
+                .img 
+                    img 
+                        transform: scale(1.10)
+        .item:nth-child(1)
+            width: 66.66%
+            position: relative
+            @media (max-width: 768px)
+                width: 100%
+                margin-bottom: 2rem
+                .img 
+                    height: 40rem!important
+            &:hover 
+                .title-first
+                    transform: translateY(100%)
+            &:after 
+                content: ''
+                width: 100%
+                height: 100% 
+                background: rgba(#000,.6)
+                position: absolute 
+                top: 0 
+                left: 0
+                z-index: 1
+                opacity: 0
+                transition: all .4s ease-in-out
+            .img 
+                width: auto
+                height: 48rem
+                overflow: hidden
+                display: block
+                img 
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    transition: all .4s ease-in-out
+            .title-first
+                position: absolute
+                bottom: 0
+                left: 0 
+                padding: 2rem 4rem
+                width: 100%
+                transition: all .4s ease-in-out
+                background: rgba(#000,.6)
+                a
+                    font-size: 1.6rem 
+                    color: #ffffff
+                    text-transform: capitalize
+            .promotion 
+                position: absolute
+                top: 1rem 
+                right: 1rem 
+                background: #d1ad5b 
+                padding: .5rem 1rem
+                z-index: 9
+                color: #fff
+                font-size: 12px
+
+            .caption 
+                position: absolute 
+                bottom: 0 
+                left: 0 
+                padding: 4rem
+                opacity: 0 
+                transition: all .4s ease-in-out
+                z-index: 3
+                .title 
+                    margin-bottom: 1.5rem
+                    a
+                        font-size: 1.8rem 
+                        color: #d1ad5b
+                        text-transform: capitalize
+                        font-weight: 600 
+
+                .brief-content 
+                    margin-bottom: 1.5rem
+                    p
+                        font-size: 1.6rem 
+                        text-transform: capitalize 
+                        color: #ffffff
+                        line-height: 2.3rem
+                .viewdetail
+                    display: inline-block
+                    padding: 1rem 3rem 
+                    background: #d1ad5b 
+                    color: #ffffff 
+                    font-weight: 600 
+                    font-size: 1.4rem
+                    text-transform: uppercase
+                    &:hover 
+                        text-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.4)
+        .item:nth-child(n+2)
+            width: 33.33%
+            display: flex
+            padding-left: 2rem
+            margin-bottom: 2rem
+            @media (max-width: 768px)
+                width: 100%
+                padding-left: 0
+                .title-first 
+                    margin-left: 0!important
+            .img 
+                height: 23rem
+                width: auto 
+                overflow: hidden
+                display: block
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    transition: all .4s ease-in-out
+            .title-first
+                position: absolute
+                bottom: 0
+                left: 0 
+                padding: 2rem
+                width: 100%
+                transition: all .4s ease-in-out
+                background: rgba(#000,.6)
+                margin-left: 2rem
+                a
+                    font-size: 1.6rem 
+                    color: #ffffff
+                    text-transform: capitalize
+            .promotion 
+                position: absolute
+                top: 1rem 
+                right: 1rem 
+                background: #d1ad5b 
+                padding: .5rem 1rem
+                z-index: 9
+                color: #fff
+                font-size: 12px
+            .caption 
+                display: none
+
+// section-4
+.home-news
+    padding: 5rem 0
+    h2 
+        margin-bottom: 3rem
+    .list-item 
+        .item 
+            margin-bottom: 3rem
+            display: none
+            figure 
+                box-shadow: 0 0 5px 0 rgba(0,0,0,.3)
+                transition: .4s ease-in-out
+                &:hover 
+                    box-shadow: 0 0 15px 0 rgba(0,0,0,.3)
+                    transform: translateY(-10px)
+                    .img
+                        img
+                            transform: scale(1.10)
+                    figcaption 
+                        .title 
+                            color: #d1ad5b 
+                .img 
+                    height: 23rem 
+                    position: relative
+                    width: auto 
+                    overflow: hidden 
+                    display: block
+                    img 
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: all .4s ease-in-out
+                    .promotion 
+                        position: absolute
+                        top: 1rem 
+                        right: 1rem 
+                        background: #d1ad5b 
+                        padding: .5rem 1rem
+                        z-index: 9
+                        color: #fff
+                        font-size: 12px
+                        text-transform: capitalize
+                    .location 
+                        position: absolute 
+                        bottom: 1rem 
+                        left: 1rem 
+                        color: #ffffff
+                        font-size: 1.4rem
+                        text-transform: capitalize
+                    .button-compare 
+                        background: #582133
+                        padding: .5rem 1rem
+                        position: absolute 
+                        top: 1rem
+                        left: 1rem
+                        display: flex 
+                        align-items: center
+                        em 
+                            color: #ffffff
+                            margin-right: 1rem
+                        span 
+                            color: #fff 
+                            font-size: 1.2rem 
+                       
+                figcaption 
+                    padding: 0 2rem
+                    .title 
+                        color: #333333
+                        text-transform: capitalize 
+                        font-size: 1.8rem 
+                        font-weight: 700
+                        margin-top: 2rem
+                        display: block
+                    .price 
+                        color: #582133
+                        margin: 1rem 0
+                        font-size: 2rem 
+                        font-weight: 600
+                        display: block
+                    .brief-content 
+                        p 
+                            line-height: 2.2rem
+                            font-size: 1.4rem
+                            margin-bottom: 1rem
+                            color: #333333
+                    .caption-bottom 
+                        display: flex 
+                        align-items: center 
+                        justify-content: space-between
+                        .created-date 
+                            em 
+                                margin-right: .5rem
+                            font-size: 1.4rem 
+                            color: #666666
+                        .viewdetail 
+                            a 
+                                color: #582133
+                                text-decoration: underline
+                                font-size: 1.4rem 
+                                font-weight: 600
+                                text-transform: capitalize
+                    .info 
+                        margin-top: 1rem
+                        display: flex 
+                        justify-content: space-between 
+                        align-items: center
+                        padding: 2rem 0
+                        border-top: 1px solid #f2f2f2
+                        .poster 
+                            display: flex
+                            align-items: center
+                            .img 
+                                width: 3rem
+                                height: 3rem 
+                                border-radius: 50%
+                                margin-right: 1rem
+                                img
+                                    width: 100%
+                                    height: 100%
+                                    object-fit: cover
+                            span 
+                                font-size: 1.4rem 
+                                color: #333333
+                                font-weight: 600
+                                text-transform: capitalize
+                        .contact 
+                            color: #582133
+                            text-decoration: underline
+                            font-size: 1.4rem 
+                            font-weight: 600
+                            text-transform: capitalize
+    .view-more 
+        display: flex 
+        justify-content: center
+        a
+            padding: 1rem 3rem 
+            background: #582133 
+            color: #ffffff
+            text-align: center
+            transition: all .3s ease-in-out
+            &:hover 
+                box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.4)
+// section-3
+.home-utilities 
+    padding: 5rem 0
+    background: #f2f2f2
+    h2 
+        margin-bottom: 3rem
+    .row.list-item 
+        .item 
+            @media (max-width: 768px)
+                margin-bottom: 3rem
+            figure 
+                .cicre 
+                    width: 9rem
+                    height: 9rem 
+                    background: $bg
+                    border-radius: 50%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    position: relative
+                    em
+                        color: #ffffff
+                        font-size: 3rem
+                    span 
+                        position: absolute
+                        top: 0
+                        right: 0
+                        width: 3rem
+                        height: 3rem 
+                        border-radius: 50%
+                        display: flex 
+                        justify-content: center 
+                        align-items: center 
+                        background: #ffffff 
+                        font-size: 1.4rem 
+                        font-weight: 700
+                        box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.15)
+
+                figcaption 
+                    h4 
+                        font-size: 1.8rem 
+                        text-transform: capitalize 
+                        color: #333333
+                        margin: 2rem 0
+                        display: block
+                    p
+                        font-size: 1.6rem 
+                        overflow: hidden
+                        text-overflow: ellipsis
+                        line-height: 25px
+                        -webkit-line-clamp: 3
+                        height: 75px
+                        display: -webkit-box
+                        -webkit-box-orient: vertical
+.partners-brand 
+    padding: 5rem 0
+    .main-title
+        margin-bottom: 3rem
+    .main-wrapper
+        border-radius: 5px
+        background-color: rgb(255, 255, 255)
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.05)
+        .heading-wrapper
+            padding: 10px 20px
+            // border-bottom: 1px solid #f2f2f2
+            h2
+                margin-bottom: 0
+                
+        .brand-list-wrapper
+            // margin: 0 -4px
+            display: flex
+            flex-wrap: wrap
+            border-top: 1px solid #f2f2f2
+            border-left: 1px solid #f2f2f2
+            // justify-content: center
+            .item
+                // margin: -.5px
+                transition: .4s ease-in-out all
+                text-align: center
+                flex: 0 0 50%
+                border-right: 1px solid #f2f2f2
+                border-bottom: 1px solid #f2f2f2
+                .ic
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    img
+                        max-height: 150px
+                a
+                    display: block
+                    padding: 20px
+                p
+                    font-size: 16px
+                    font-weight: 600
+                &:hover
+                    color: #f90707
+                    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15)
+
+    @media(min-width: 576px)
+        .main-wrapper
+            .brand-list-wrapper
+                .item
+                    flex: 0 0 33.3333%
+    @media(min-width: 768px)
+        .main-wrapper
+            .brand-list-wrapper
+                .item
+                    flex: 0 0 25%
+    @media(min-width: 1025px)
+        .main-wrapper
+            .brand-list-wrapper
+                .item
+                    flex: 0 0 20%
+    @media(min-width: 1200px)
+        .main-wrapper
+            .brand-list-wrapper
+                .item
+                    flex: 0 0 16.666667%
+                
+
+
+
+
+            
+            

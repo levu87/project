@@ -1,0 +1,93 @@
+.fancybox-content
+    width: 50%!important
+    @media (max-width: 786px)
+        width: unset!important
+.sign-up
+    width: 100%
+    max-width: 800px
+    height: 600px
+    position: relative
+    overflow: hidden
+    display: flex
+    justify-content: center
+.sign-up__form
+    background-color: white
+    width: 100%
+    height: auto
+    margin: 0 auto
+    position: relative
+    z-index: 10
+    border-radius: 0
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+.sign-up__content
+    display: flex
+    flex-flow: column nowrap
+
+.sign-up__title
+    color: #333
+    font-weight: 400
+    text-transform: capitalize
+    font-size: 25px
+    margin-bottom: 30px
+
+.sign-up__inp
+    outline: none
+    margin-bottom: 15px
+    padding: 1rem 2rem
+    border: 0
+    border: 1px solid #582133
+    text-transform: capitalize
+    font-size: 16px
+    font-weight: 400
+    width: 100%
+    &:focus
+        box-shadow: 0 0 15px 0 rgba(0,0,0,.3)
+
+.sign-up__buttons
+    display: flex
+    flex-direction: column
+    > *
+        width: 100%
+        padding: 20px 15px
+        border: 0
+        text-transform: capitalize
+        font-size: 16px
+        font-weight: 600
+.forgot__password
+    text-align: center
+    text-transform: capitalize
+    display: inline-block
+    margin-top: 20px
+    a 
+        color: #d1ad5b
+.checkbox 
+    display: flex
+    input[type="radio"]
+        margin: 0 1rem
+    span 
+        line-height: 2.3rem
+        a 
+            color: #d1ad5b
+            margin-left: .5rem
+.bottom 
+    text-align: center
+    a 
+        color: #d1ad5b
+.btn--register
+    background: #333333
+    color: #ffffff
+    text-align: center
+    margin-bottom: 2rem
+    &:hover 
+        color: #ffffff
+        text-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.4)
+.btn--signin,.btn--signup
+    background: $bg
+    color: white
+    text-align: center
+    &:hover 
+        color: #ffffff
+        text-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.4)

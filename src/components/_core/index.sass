@@ -1,0 +1,75 @@
+*,
+*:after,
+*:before 
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+html 
+	font-size: 62.5% 
+	overflow-x: hidden
+	@media (max-width: 1200px)
+		font-size: 56.25%
+	@media (max-width: 992px)
+		font-size: 50%
+
+body 
+	font-family: 'Open Sans', sans-serif
+	line-height: 1
+	font-weight: 400
+	overflow-x: hidden
+
+a 
+	text-decoration: underline
+	color: #333333
+.clearfix:after
+	clear: both
+	content: ""
+	display: block
+img 
+	display: block
+	max-width: 100%
+h1,h2,h3,h4,h5
+	font-family: 'Varela Round', sans-serif
+button 
+	cursor: pointer
+.hidden 
+	display: none
+.over-hidden
+	overflow: hidden
+input,
+textarea,
+button 
+	outline: none
+	box-shadow: none
+	font-family: 'Open Sans', sans-serif
+.f-2 
+	font-family: 'Varela Round', sans-serif
+	font-weight: 500 
+/* variables */
+$main: #93613c
+$vang: #d1ad5b
+$tim: #582133
+$bg: linear-gradient(90deg,#ba8361,#d1ad5b,#b2874b,#93613c)
+table 
+	border-collapse: collaps
+	border-spacing: 0
+a 
+	text-decoration: none
+.main-title 
+	font-size: 2.4rem
+	text-transform: capitalize
+	font-family: 'Varela Round', sans-serif
+	font-weight: 500 
+	position: relative
+	display: inline-block
+	// &:after 
+	// 	content: ''
+	// 	position: absolute
+	// 	bottom: -1rem 
+	// 	left: 50%
+	// 	transform: translateX(-50%)
+	// 	width: 50%
+	// 	height: .1rem 
+	// 	background: linear-gradient(90deg,rgba(186,131,97,.72),rgba(209,173,91,.85),rgba(178,135,75,.78),rgba(147,97,60,.68))

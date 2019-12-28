@@ -1,0 +1,76 @@
+.col-md-9.contain 
+    .tab-content#tab-1.active
+        .row 
+            .col-lg-8
+                .form-wrap 
+                    h2.main-title Thông tin cá nhân 
+                    .form-group
+                        label(for="" ) họ tên 
+                        input.form-control(type='text' required='required')
+                    .form-group
+                        label(for="" ) Giới thiệu
+                        textarea(name="", cols="30", rows="10")
+                .form-wrap 
+                    h2.main-title thông tin liên hệ
+                    .form-group
+                        label(for="" ) Số điện thoại 
+                        input.form-control(type='phone' required='required')
+                    .form-group
+                        label(for="" ) Email
+                        input.form-control(type='email' required='required')
+                .button-submit
+                    button(type="submit") Cập nhật
+            .col-md-4
+                .profile-image
+                    .image.background-image
+                        img(src='/uploads/images/1251904106.jpg', alt='')
+                    .single-file-input
+                        input#user_image(type='file', name='user_image')
+                        .btn.btn-framed.btn-primary.small Ảnh đại diện
+
+
+    .tab-content#tab-2
+        .head
+            .select
+                span Sắp xếp
+                .custom-select
+                    select
+                        option(value="1") Sắp xếp theo
+                        option(value="2") mới nhất
+                        option(value="3") giá cao nhất
+            
+            a.button-post(href="") tạo tin mới
+        .list-item 
+            .item
+                figure
+                    .img 
+                        img(src="./img/pr/1.jpg", alt="")
+                        .promotion hot 
+                        .location 
+                            em.mdi.mdi-map-marker-outline
+                            | nhơn trạch, đồng nai
+                        a(href="javascript:void(0)").button-compare 
+                            em.mdi.mdi-repeat
+                            span So sánh
+                .caption 
+                    a.title(href="") Căn hộ river 
+                    .price 1 triệu
+                    .brief-content 
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.
+                    .caption-bottom
+                        .created-date 
+                            em.mdi.mdi-calendar
+                            | 11-11-11
+                        .viewdetail 
+                            a chi tiết
+                    .button-action 
+                        a.btn-edit(href="") 
+                            em.mdi.mdi-pencil-box-outline
+                            | Sửa
+                        a.btn-del(href="") 
+                            em.mdi.mdi-delete 
+                            | xóa
+                        a.btn-pay(href="") 
+                            em.far.fa-money-bill-alt
+                            | Trả phí
+                        
