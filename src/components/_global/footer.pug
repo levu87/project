@@ -1,62 +1,94 @@
-footer.lmp-footer
-    .top-wrapper.lmp-section(setBackground='./img/bg_footer.jpg')
-        .container
-            .row
-                .col-lg-4.content-wrapper
-                    nav 
-                        h2.main-title contact us
-                        li
-                            
-                            .lh
-                                em.mdi.mdi-map-marker
-                                p Địa chỉ đang được chúng tôi cập nhật
-                        li
-                            .lh
-                                em.fas.fa-phone-volume
-                                p 0399.508.8777 
-                        li
-                            .lh
-                                em.mdi.mdi-email
-                                p info@landshub.com
-                        li
-                            .lh 
-                                em.mdi.mdi-web
-                                p
-                                    a(href="") www.landshub.me
-                .col-lg-8.form-contact 
-                    .row 
-                        .col-lg-6.col-12.inp__left
-                            input(type="text", name="" class="inp" placeholder="Họ tên")
-                            input(type="text", name="" class="inp" placeholder="Phone")
-                            input(type="text", name="" class="inp" placeholder="Email")
-                        .col-lg-6.col-12.inp__right 
-                            textarea(name="", cols="30", rows="10" placeholder="nội dung") 
-                            input(type="submit", value="Gửi")
-            #gotop.em.mdi.mdi-chevron-up 
-    .bottom-wrapper
-        .main-wrapper
-            .left-wrapper
-                .copyright-wrapper
-                    <p>Copyright © 2019 LandsHub. <a href="">Website designed </a>by <a href="">Me</a></p> 
-                .list-page-wrapper
+
+footer.footer 
+    .container 
+        .newsletter-wrap
+            .newsletter
+                input(type="text" placeholder="Đăng ký nhận bản tin...")
+                button.signup-btn Đăng ký   
+        .menu-footer-wrap
+            .col-ft
+                nav.menu
+                    h3 sản phẩm
                     ul
                         li
-                            a(href="#") Quy định sử dụng
+                            a(href="") Sữa rửa mặt
                         li
-                            a(href="#") Điều kiện và điều khoản sử dụng
-            .right-wrapper
-                .social-wrapper
-                    ul
+                            a(href="") toner 
                         li
-                            a(href="#")
+                            a(href="") serum điều trị 
+                        li
+                            a(href="") kem dưỡng ẩm/ bảo vệ
+                        li
+                            a(href="") mắt môi
+            .col-ft
+                nav.menu
+                    h3 sản phẩm
+                    ul 
+                        li
+                            a(href="") mặt nạ
+                        li
+                            a(href="") sản phẩm đặt biệt 
+                        li
+                            a(href="") chống nắng
+                        li
+                            a(href="") professional 
+                        li
+                            a(href="") viên uống
+            .col-ft
+                nav.menu
+                    h3 giải pháp
+                    ul 
+                        li
+                            a(href="") lão hóa do di truyền 
+                        li
+                            a(href="") lão hóa do nội tiết
+                        li
+                            a(href="") nám và lão hóa theo môi trường 
+                        li
+                            a(href="") giải pháp cho da mụn
+                    
+            .col-ft
+                nav.menu
+                    h3 về murad
+                    ul 
+                        li
+                            a(href="") blog 
+                        li
+                            a(href="") về murad
+                        li
+                            a(href="") tin tức, sự kiện
+                        li
+                            a(href="") khuyến mãi 
+                        li 
+                            a(href="") gặp gỡ chuyên gia murad
+                    
+            .col-ft
+                nav.menu
+                    ul.social-icon
+                        li
+                            a.fb(href="#")
                                 em.fab.fa-facebook-f
                         li
-                            a(href="#")
+                            a.twt(href="#")
                                 em.fab.fa-twitter
-                        li
-                            a(href="#")
-                                em.fab.fa-youtube
-                        li
-                            a(href="#")
+                        li 
+                            a(href="")
+                                em.mdi.mdi-linkedin
+                        li 
+                            a(href="")
                                 em.fab.fa-instagram
-        
+                        li
+                            a.ytb(href="#")
+                                em.fab.fa-youtube
+    .copyright-wrap
+        .container 
+            .copyright
+                .left
+                    p Copyright © 2017 - 2019 Murad Vietnam All Rights Reserved.
+                ul.right
+                    li
+                        a(href="#") Điều khoản 
+                    li
+                        a(href="#") Chính sách bảo mật
+                    li 
+                        a(href="") sitemap

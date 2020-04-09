@@ -7,567 +7,520 @@
 		<link rel="stylesheet" href="./css/core.min.css">
 		<link rel="stylesheet" href="./css/main.min.css">
 		<title>Home</title>
-		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500i,600,600i,700,700i,800,800i,900&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
 	</head>
 	<body class="home-page">
 		<header class="header"> 
-			<div class="header__top">
-				<div class="container p-0">
-					<div class="wrapper">
-						<div class="call"> <em class="mdi mdi-phone"> </em>0399.508.877 </div>
-						<div class="button-account"> <a class="register" data-fancybox data-animation-duration="700" data-src="#Modal2" href="javascript:;"> <em class="mdi mdi-account-plus-outline"></em>Đăng ký</a><a class="login" data-fancybox data-animation-duration="700" data-src="#Modal1" href="javascript:;"> <em class="mdi mdi-login-variant"></em>Đăng nhập </a>
-							<div class="account-after"><a class="user">
-									<div class="img"><img src="./img/1.jpg" alt=""></div>
-									<p>le ba vu</p></a>
-								<ul class="list-item">
-									<li> <a>demo </a></li>
-									<li> <a>demo</a></li>
-								</ul>
-							</div>
+			<div class="head-wrap">
+				<div class="container">
+					<div class="head">
+						<div class="head__buy-here"> <a href="#">Chọn nơi bạn muốn mua hàng </a></div>
+						<div class="head__hotline"> <a href="tel:1900633345"> <i class="mdi mdi-phone"></i>1900633345</a></div>
+						<div class="head__searchbox"> 
+							<input type="text" name="" placeholder="Tìm kiếm">
+							<button> <i class="fas fa-search"> </i></button>
 						</div>
-						<div id="Modal1" style="display: none;max-width:900px;">
-							<div class="sign-up">
-								<form class="sign-up__form" action="javascript:void(0)">
-									<div class="sign-up__content">
-										<h2 class="sign-up__title">Đăng nhập</h2>
-										<input class="sign-up__inp" type="email" placeholder="Email" required="required">
-										<input class="sign-up__inp" type="password" placeholder="Mật khẩu" required="required"><span class="forgot__password">Quên mật khẩu <a href="">nhấn vào đây</a></span>
-									</div>
-									<div class="sign-up__buttons"><a class="btn btn--register" href="javascript:;">Tạo tài khoản</a>
-										<button class="btn btn--signin" type="submit">Đăng nhập</button>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div id="Modal2" style="display: none;max-width:900px;">
-							<div class="sign-up">
-								<form class="sign-up__form" action="javascript:void(0)">
-									<div class="sign-up__content">
-										<h2 class="sign-up__title">Đăng ký</h2>
-										<input class="sign-up__inp" type="text" placeholder="Tên đăng nhập" required="required">
-										<input class="sign-up__inp" type="email" placeholder="Email" required="required">
-										<input class="sign-up__inp" type="password" placeholder="Mật khẩu" required="required">
-										<input class="sign-up__inp" type="password" placeholder="Nhập lại mật khẩu" required="required">
-										<div class="checkbox"> 
-											<input type="radio" name=""><span>Bằng cách nhấp vào Đăng ký<a href="">bạn đồng ý với Điều khoản, Chính sách của chúng tôi.</a></span>
-										</div>
-									</div>
-								</form>
-							</div>
-							<div class="sign-up__buttons">
-								<button class="btn btn--signup" type="submit">Đăng ký</button><a class="btn social-button" href=""> <em class="fas fa-facebook-f"></em></a>
-							</div><span class="bottom">Bạn đã có tài khoản. <a data-fancybox data-animation-duration="700" data-src="#Modal1" href="javascript:;">Đăng nhập</a></span>
-						</div>
+						<div class="head__language"> <a href="#">English</a></div>
+						<div class="head__cart"><a href=""> <img src="./img/icon-cart.png" alt=""><span>shop online </span></a></div>
 					</div>
 				</div>
 			</div>
-			<div class="header__bottom"> 
-				<div class="container main-wrap"> 
-					<div class="left"><a class="logo" href="./"><img src="./img/logo.png" alt=""></a></div>
-					<div class="right">
-						<div class="main-menu"> 
-							<ul> 
-								<li><a href="">Trang chủ </a></li>
-								<li class="has-dropdown"> <a href="">Dự án </a>
-									<ul class="nav-sub"> 
-										<li> <a>demo </a></li>
-										<li> <a>demo</a></li>
-									</ul>
-								</li>
-								<li> <a href="">Thuê </a></li>
-								<li> <a href="">Bán</a></li>
-								<li> <a href="">Tin tức </a></li>
-								<li> <a href="">Ký gửi </a></li>
-								<li> <a href="">Liên hệ</a></li>
+			<div class="header-bottom">
+				<div class="container">
+					<div class="menu-wrapper">
+						<div class="toggle-btn">
+							<div class="button"></div>
+						</div>
+						<div class="logo"><a href=""><img src="./img/logo-murad.jpg" alt=""></a></div>
+						<nav class="menu"> 
+							<ul class="menu__list"> 
+								<li class="menu__item"><a class="active menu__link" href="">trang chủ </a></li>
+								<li class="menu__item"><a class="menu__link" href="">về murad</a></li>
+								<li class="menu__item"><a class="menu__link" href="">sản phẩm </a></li>
+								<li class="menu__item"> <a class="menu__link" href="#">giải pháp </a></li>
+								<li class="menu__item"><a class="menu__link" href="">tin tức </a></li>
+								<li class="menu__item"><a class="menu__link" href="">khuyến mãi</a></li>
+								<li class="menu__item"><a class="menu__link" href="">blog </a></li>
+								<li class="menu__item"><a class="menu__link" href="">liên hệ</a></li>
 							</ul>
+						</nav>
+						<div class="button-search"> <i class="fas fa-search"> </i></div>
+						<div class="nav-mobile"> 
+							<div class="head">menu</div>
 						</div>
-					</div>
-					<div class="button-post"> <a href="">Đăng tin</a></div>
-					<div class="mobile-toggle">
-						<div class="button"></div>
+						<div class="search-wrap"></div>
+						<div class="back-drop"></div>
 					</div>
 				</div>
 			</div>
-			<div class="mobile-menu"></div>
-			<div class="back-drop"> </div>
 		</header>
 		<main>
-			<section class="home-banner-1"> 
-				<div class="banner-img"><img src="./img/bg_banner.jpg" alt=""></div>
-				<div class="search-wrapper">
-					<div class="big-title"> 
-						<p class="f-2">Tìm kiếm ngôi nhà bạn yêu thích </p>
-					</div>
-					<div class="container">
-						<div class="searchbox">
-							<div class="form-group search-inp">
-								<input type="text" name="">
-							</div>
-							<div class="form-group submit">
-								<input type="submit" value="Tìm kiếm">
-							</div>
+			<section class="home-banner"> 
+				<div class="banner"> <img src="./img/mr-bg-1.png" alt="">
+					<div class="banner-text-content"> 
+						<div class="content">
+							<p>Công thức tạo nên sản phẩm là sự kết hợp hài hòa giữa các thành phần điều trị tinh hoa nhất, mang đến hiệu quả bền vững, đồng thời lành tính cho mọi làn da, kể là làn da nhạy cảm.</p>
+							<div class="quote-open"> <img src="./img/icon-1.png" alt=""></div>
+							<div class="quote-close"> <img src="./img/icon-2.png" alt=""></div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="home-project clearfix">
+			<section class="process-section" setBackground="./img/mr-bg-2.png">
 				<div class="container"> 
-					<h2 class="main-title">Dự án tiêu biểu</h2>
-					<div class="list-item"> 
-						<div class="item item--1"> 
-							<div class="img"> <img src="./img/pr/1.jpg" alt=""></div>
-							<div class="title-first"><a href="">dự án himlam</a></div>
-							<div class="promotion"> <span>Đang bán</span></div>
-							<div class="caption"> 
-								<div class="title"> <a href="">dự án Himlam </a></div>
-								<div class="brief-content"> 
-									<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia at, recusandae sunt ab numquam aspernatur dolor hic quas quidem fuga ut porro sit itaque odit est assumenda exercitationem in natus?</P>
-								</div><a class="viewdetail" href="">chi tiết</a>
+					<div class="process-wrapper">
+						<h2 class="main-title">CÔNG TRÌNH NGHIÊN CỨU 10 NĂM TẠO HIỆU QUẢ SAU 7 NGÀY</h2>
+						<div class="content"> 
+							<p>Rapid Age Spot Correcting Serum là thành quả từ công trình nghiên cứu suốt 10 năm của đội ngũ chuyên gia và bác sĩ Howard Murad. Với công thức điều trị độc quyền & mang tính cách mạng<strong>NHP-3</strong>, sản phẩm quyền năng giúp giảm nám hiệu quả chỉ sau 7 ngày.</p>
+							<p>Hoạt chất NHP-3 là sự kết hợp hoàn hảo của 3 thành phần:<strong>Niacinamide, Hexylresorcinol, Plankton Extract</strong>. Các thành phần này sẽ hoạt động đồng thời, nhằm tạo nên hiệu quả tốt nhất. </p>
+							<div class="list-item">
+								<div class="item"> <img src="./img/mr-1.png" alt=""></div>
+								<div class="item"> <img src="./img/mr-2.png" alt=""></div>
+								<div class="item"> <img src="./img/mr-3.png" alt=""></div>
 							</div>
-						</div>
-						<div class="item item--2">
-							<div class="img"> <img src="./img/pr/1.jpg" alt=""></div>
-							<div class="title-first"><a href="">dự án himlam</a></div>
-							<div class="promotion">Đang bán</div>
-							<div class="caption"> 
-								<div class="title">dự án Himlam </div>
-								<div class="brief-content"> 
-									<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia at, recusandae sunt ab numquam aspernatur dolor hic quas quidem fuga ut porro sit itaque odit est assumenda exercitationem in natus?</P>
-								</div><a class="viewdetail" href="">chi tiết</a>
-							</div>
-						</div>
-						<div class="item item--3">
-							<div class="img"> <img src="./img/pr/1.jpg" alt=""></div>
-							<div class="title-first"><a href="">dự án himlam</a></div>
-							<div class="promotion">Đang bán</div>
-							<div class="caption"> 
-								<div class="title">dự án Himlam </div>
-								<div class="brief-content"> 
-									<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia at, recusandae sunt ab numquam aspernatur dolor hic quas quidem fuga ut porro sit itaque odit est assumenda exercitationem in natus?</P>
-								</div><a class="viewdetail" href="">chi tiết</a>
-							</div>
+							<p>
+								Không những thế, sản phẩm còn được bổ sung vitamin C, Oligo-</br> peptides và bột ngọc trai giúp nuôi dưỡng và làm bật tông cho 
+</br> làn da tối màu.
+							</p>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="home-news">
+			<section class="solution-section"> 
 				<div class="container"> 
-					<h2 class="main-title">Tin vừa đăng </h2>
-					<div class="row list-item">
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="caption-bottom">
-										<div class="created-date"> <em class="mdi mdi-calendar"></em>11-11-11</div>
-										<div class="viewdetail"> <a>chi tiết</a></div>
-									</div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="box-content box-content--1">
+								<h3>LÀ GIẢI PHÁP CHO MỌI LÀN DA NÁM KỂ CẢ DA NHẠY CẢM</h3>
+								<h4>NHP-3 VƯỢT TRỘI HƠN HYDROQUINONE TRONG ĐIỀU TRỊ NÁM DA </h4>
+								<p>Hydroquinone (HQ) thường được biết đến với tên dihydroxybenzen, là một hợp chất hydroxyphenolic có cấu trúc tương tự với tiền chất của melanin. HQ từng được xem là lựa chọn hàng đầu trong điều trị nám da nhờ khả năng làm mất sắc tố gây đậm màu trên da. Nhưng theo nhiều kết quả nghiên cứu, HQ cũng đồng thời tác động lên cấu trúc màng tế bào melanin, thậm chí tiêu diệt các tế bào này. </p>
+								<p>HQ thường được điều chế dưới dạng thuốc bôi với nồng độ 2 – 5% cùng liệu trình điều trị được khuyến khích thường kéo dài tối thiểu 3 tháng đến 1 năm. Tuy nhiên, do đặc tính tẩy mạnh, HQ không thể dùng cho làn da nhạy cảm. </p>
+							</div>
+							<div class="box-img box-img--1">
+								<div class="img"><img src="./img/mr-5.png" alt=""></div>
+							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-12 item">
-							<figure> 
-								<div class="img"> <img src="./img/pr/1.jpg" alt="">
-									<div class="promotion">hot </div>
-									<div class="location"> <em class="mdi mdi-map-marker-outline"></em>nhơn trạch, đồng nai</div><a class="button-compare" href="javascript:void(0)"> <em class="mdi mdi-repeat"></em><span>So sánh</span></a>
-								</div>
-								<figcaption> <a class="title" href="">Căn hộ river </a>
-									<div class="price">1 triệu</div>
-									<div class="brief-content"> 
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ut vero et corrupti est accusamus ad deleniti illo.</p>
-									</div>
-									<div class="viewdetail"> <a>chi tiết</a></div>
-									<div class="info"> 
-										<div class="poster"> 
-											<div class="img"> <img src="./img/2.jpg" alt=""></div><span>lê bá vũ </span>
-										</div><a class="contact" href="">liên hệ</a>
-									</div>
-								</figcaption>
-							</figure>
+						<div class="col-md-6 mb-reverse">
+							<div class="box-img box-img--2">
+								<div class="img"> <img src="./img/mr-4.png" alt=""></div>
+							</div>
+							<div class="box-content box-content--2">
+								<div class="text-note"><span> Vì tính tẩy mạnh Hydroquinone không thể dùng cho làn da nhạy cảm.</span></div>
+								<p>Trong khi Hydroquinone tiềm ẩn khả năng kích ứng đối với những làn da nhạy cảm thì NHP-3 với các thành phần Niacinamide, Hexylresorcinol, Plankton Extract an toàn, thân thiện và ứng dụng cao đối với làn da, được hội đồng Da Liễu công nhận mang hiệu quả vượt trội trong việc điều trị gia tăng sắc tố.</p>
+								<p>Công thức NHP-3 có trong serum giảm nám 7 ngày Rapid Age Spot Correcting Serum cho phép xoá tan các đốm nâu trên gương mặt như chưa từng xuất hiện, đem đến làn da tươi sáng, rạng rỡ chỉ trong 1 tuần và không làm xuất hiện các dấu hiệu kích ứng. </p>
+								<p> <span>Không gây kích ứng, cho hiệu quả lâu dài </span>là lý do vì sao NHP-3 được ưa chuộng hơn trong điều trị nám da. Sản phẩm có thể kết hợp thêm những sản phẩm đặc trị của các dòng trị liệu khác để có thể nhanh chóng đạt đến làn da lý tưởng. </p>
+							</div>
 						</div>
 					</div>
-					<div class="view-more"><a href="javascript:void(0)">Xem thêm</a></div>
 				</div>
 			</section>
-			<section class="home-utilities"> 
+			<section class="result-section"> 
 				<div class="container"> 
-					<h2 class="main-title">Mua bán thật dễ dàng với LandsHub</h2>
-					<div class="row list-item"> 
-						<div class="col-lg-3 col-6 item"> 
-							<figure> 
-								<div class="cicre"> <em class="mdi mdi-account"> </em><span>25</span></div>
-								<figcaption> 
-									<h4>Tạo tài khoản </h4>
-									<p>Quyết định đưa ra sau khi tìm hiểu thị trường, các thủ tục, thuế & chi phí, mức sinh lời...</p>
-								</figcaption>
-							</figure>
+					<h2 class="main-title">KẾT QUẢ ĐIỀU TRỊ NÁM VỚI RAPID AGE SPOT CORRECTING SERUM</h2>
+					<div class="brief-content">
+						<p>Hiệu quả sản phẩm dù phụ thuộc vào tình trạng da và cơ địa của mỗi người. Tuy nhiên, kết quả chứng minh lâm sàng đã cho thấy rằng, thực tế sau 7 ngày sử dụng có đến: </p>
+					</div>
+					<div class="result-wrap">
+						<div class="result-slider"> 
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"> 
+										<div class="img"> <img src="./img/slider-1.png" alt=""></div>
+									</div>
+									<div class="swiper-slide"> 
+										<div class="img"> <img src="./img/slider-1.png" alt=""></div>
+									</div>
+									<div class="swiper-slide"> 
+										<div class="img"> <img src="./img/slider-1.png" alt=""></div>
+									</div>
+								</div>
+								<div class="swiper-btn-next"><em class="mdi mdi-chevron-right"></em></div>
+								<div class="swiper-btn-prev"><em class="mdi mdi-chevron-left"></em></div>
+							</div>
+							<div class="images-caption"> 
+								<p>(Hình ảnh da thực tế sau quá trình sử dụng sản phẩm, không thông qua chỉnh sửa)</p>
+							</div>
 						</div>
-						<div class="col-lg-3 col-6 item"> 
-							<figure> 
-								<div class="cicre"> <em class="mdi mdi-upload"></em><span>50</span></div>
-								<figcaption> 
-									<h4>Đăng tin quảng bá </h4>
-									<p>Nhà của bạn được hiển thị lên các kênh quảng bá với đầy đủ thông tin cùng hình ảnh chất lượng cao, chuyên nghiệp.</p>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-3 col-6 item"> 
-							<figure> 
-								<div class="cicre"> <em class="mdi mdi-thumb-up"></em><span>100</span></div>
-								<figcaption> 
-									<h4>Liên hệ</h4>
-									<p>Với lợi thế về công nghệ cùng với đội ngũ chuyên viên chuyên nghiệp, Chúng tôi là sự lựa chọn tốt nhất cho bạn.</p>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-lg-3 col-6 item"> 
-							<figure> 
-								<div class="cicre"> <em class="mdi mdi-wallet-outline"></em><span>500</span></div>
-								<figcaption> 
-									<h4>Hoàn tất giao dịch</h4>
-									<p>Đàm phán với khách có nhu cầu, chốt giá và cùng hoàn tất các thủ tục, giấy tờ theo quy định.</p>
-								</figcaption>
-							</figure>
+						<div class="result-processor">
+							<div class="list-item">
+								<div class="item">
+									<div class="circle"> <span>74% </span></div>
+									<div class="title">Nhìn thấy những đốm đen mờ hơn</div>
+								</div>
+								<div class="item">
+									<div class="circle"><span>85%</span></div>
+									<div class="title">Thấy da sáng hơn</div>
+								</div>
+								<div class="item">
+									<div class="circle"><span>78%</span></div>
+									<div class="title">Thấy sự rạng rỡ của da được cải thiện</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="partners-brand">
+			<section class="expert-section"> 
+				<div class="container"> 
+					<h2 class="main-title">RAPID AGE SPOT CORRECTING SERUM & CHUYÊN GIA </h2>
+					<div class="banner"><img src="./img/mr-8.png" alt=""></div>
+					<div class="brief-content"> 
+						<p>Điều trị nám da là vấn đề vô cùng quan trọng và cấp thiết, bởi không chỉ khiến vẻ ngoài của phụ nữ trở nên kém sắc, mất thẩm mỹ mà còn ảnh hưởng rất lớn đến tâm lý, khiến bạn mất tự tin và vô tình bỏ lỡ nhiều cơ hội tốt đẹp trong cuộc sống. Nếu đã thử qua rất nhiều phương pháp điều trị mà vẫn chưa “tiễn biệt” được những gốc nám cứng đầu thì có thể bạn đã mắc phải những sai lầm:</p>
+					</div>
+					<div class="full-content"> 
+						<div class="list-item"> 
+							<div class="item"> 
+								<h3>Tâm lý nóng vội, thiếu kiên nhẫn</h3>
+								<p>Mỗi người có một làn da và tình trạng da khác nhau. Tuỳ theo mỗi phương pháp cụ thể mà việc điều trị nám da cần một thời gian riêng nhất định.Tâm lý nóng vội, không kiên trì thực hiện hết và đủ quy trình trị nám da là nguyên nhân khiến nhiều chị em không thể diệt tận gốc nám sạm.</p>
+							</div>
+							<div class="item"> 
+								<h3>Chưa hình thành thói quen chăm sóc da đúng chuẩn</h3>
+								<p>Nhiều người vẫn loay hoay chưa biết làm thế nào để hình thành thói quen chăm sóc da đúng chuẩn, trong đó phải kể đến việc xem nhẹ kem chống nắng, không quan trọng chuyện làm sạch da và chuẩn hoá thực đơn dinh dưỡng mỗi ngày. </p>
+							</div>
+							<div class="item"> 
+								<h3>Lựa chọn phương pháp trị nám da không phù hợp</h3>
+								<p>Hiện nay, phương pháp điều trị nám da vô cùng đa dạng, khiến các chị em băn khoăn trong việc lựa chọn, dễ dẫn đến quyết định sai lầm. Chẳng những mất tiền cho quá trình điều trị mà hàng loạt các biến chứng nguy hại khác sẽ xảy ra như tổn thương da, viêm da, thậm chí là ung thư da. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="step-by-step" setBackground="./img/mr-bg-4.png">
+				<div class="text-divider">
+					PHÁC ĐỒ ĐIỀU TRỊ CHO HIỆU QUẢ TRONG 7 NGÀY </br>CỦA BÁC SĨ THIÊN TÀI HOWARD MURAD</div><span class="note">Sử dụng: Sáng & Chiều</span>
 				<div class="container">
-					<h2 class="main-title">Đối tác </h2>
-					<div class="main-wrapper">
-						<div class="brand-list-wrapper">
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a1.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a2.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a3.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a4.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a5.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a6.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a7.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a8.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a9.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a10.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a11.png" alt=""></div>
-									</figure></a></div>
-							<div class="item"><a href="">
-									<figure>
-										<div class="ic" style="height: 150px;"><img src="./img/a12.png" alt=""></div>
-									</figure></a></div>
+					<div class="list-item"> 
+						<div class="item"> 
+							<div class="img"> <img src="./img/mr-9.png" alt=""></div>
+							<div class="content"> <span>Bước 1: </span>
+								<p>Làm sạch da với sữa rửa mặt Essential-C Cleanser. </p>
+							</div>
+						</div>
+						<div class="item"> 
+							<div class="img"> <img src="./img/mr-10.png" alt=""></div>
+							<div class="content"> <span>Bước 2: </span>
+								<p>Thoa Rapid Age Spot Correcting Serum đúng liều lượng được chỉ định.</p>
+							</div>
+						</div>
+						<div class="item"> 
+							<div class="img"> <img src="./img/mr-11.png" alt=""></div>
+							<div class="content"> <span>Bước 3: </span>
+								<p>Dùng kem chống nắng vào ban ngày và Kem dưỡng ẩm City Skin Overnight Detox</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<ssection class="prize-section"> 
+				<div class="container"> 
+					<h2 class="main-title">Các giải thưởng </h2>
+					<div class="prize-slider"> 
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"> 
+									<div class="img"> <img src="./img/brand-1.png" alt=""></div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="img"> <img src="./img/brand-2.png" alt=""></div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="img"> <img src="./img/brand-3.png" alt=""></div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="img"> <img src="./img/brand-3.png" alt=""></div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="img"> <img src="./img/brand-4.png" alt=""></div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="img"> <img src="./img/brand-5.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-btn-next"><em class="mdi mdi-chevron-right"></em></div>
+						<div class="swiper-btn-prev"><em class="mdi mdi-chevron-left"></em></div>
+					</div>
+				</div>
+			</ssection>
+			<section class="product-section"> 
+				<div class="container"> 
+					<div class="product-wrapper">
+						<div class="pro-buy">
+							<div class="head"> 
+								<h4>mua</h4>
+							</div>
+							<div class="item"> 
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"> 
+											<figure> 
+												<div class="figure-img"> 
+													<div class="img"> <img src="./img/mr-12.png" alt=""></div>
+													<div class="swiper-btn-next"><em class="mdi mdi-chevron-right"></em></div>
+													<div class="swiper-btn-prev"><em class="mdi mdi-chevron-left"></em></div>
+												</div>
+												<figcaption> 
+													<div class="caption-top"><a class="title" href="">RAPID AGE SPOT CORRECTING SERUM</a><span class="sub-title">Serum giảm nám 7 ngày</span></div>
+													<div class="caption-bottom"><span class="price">2.588.000 ₫</span></div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pro-donate">
+							<div class="head"> 
+								<h4>Chọn sản phẩm tặng kèm</h4>
+							</div>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"> 
+										<div class="item"> 
+											<figure> 
+												<div class="img"> <img src="./img/mr-13.png" alt=""></div>
+												<figcaption> 
+													<div class="caption-top"><a class="title" href="">NUTRIENT CHARGED WATER GEL</a><span class="sub-title">Gel sạc nước dinh dưỡng, giữ ẩm đến 5 ngày</span></div>
+													<div class="caption-bottom"><span class="price">1.863.000 ₫</span></div>
+												</figcaption>
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-btn-next"><em class="mdi mdi-chevron-right"></em></div>
+								<div class="swiper-btn-prev"><em class="mdi mdi-chevron-left"></em></div>
+							</div>
+						</div>
+						<div class="order-btn"> <a href="">đặt hàng ngay</a></div>
+					</div>
+				</div>
+			</section>
+			<section class="review-section" setBackground="./img/mr-bg-3.png">
+				<h2 class="main-title">ĐÁNH GIÁ CỦA KHÁCH HÀNG</h2>
+				<div class="amount-review"> <strong>101 </strong>Lượt đánh giá</div>
+				<div class="container"> 
+					<table class="table">
+						<tr class="item">
+							<td class="rating">
+								<div class="list-item-rating"><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em></div>
+								<div class="name">Cam Han Ng</div>
+							</td>
+							<td class="content"> 
+								<p>Phiên bản sức mạnh này có hiệu chỉnh sắc tố kỳ diệu, các đốm nâu trên bề mặt da dường như biến mất trong vòng một tuần.</p>
+							</td>
+						</tr>
+						<tr class="item"> 
+							<td class="rating">
+								<div class="list-item-rating"><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em></div>
+								<div class="name">Tran Linh</div>
+							</td>
+							<td class="content"> 
+								<p>Sản phẩm thật nhẹ nhàng, thậm chí hoàn hảo cho da nhạy cảm. Tôi thích sử dụng vào ban đêm để sản phẩm phát huy sự kỳ diệu trên làn da.</p>
+							</td>
+						</tr>
+						<tr class="item"> 
+							<td class="rating">
+								<div class="list-item-rating"><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em></div>
+								<div class="name">Nguyễn Mai Sơn</div>
+							</td>
+							<td class="content"> 
+								<p>Đây là một sản phẩm tôi không bao giờ muốn thiếu!</p>
+							</td>
+						</tr>
+						<tr class="item"> 
+							<td>
+								<div class="rating-box">
+									<div class="rating-container">
+										<input id="star-5" type="radio" name="rating" value="5">
+										<label for="star-5"><em class="far fa-star"></em></label>
+										<input id="star-4" type="radio" name="rating" value="4">
+										<label for="star-4"><em class="far fa-star"></em></label>
+										<input id="star-3" type="radio" name="rating" value="3">
+										<label for="star-3"><em class="far fa-star"></em></label>
+										<input id="star-2" type="radio" name="rating" value="2">
+										<label for="star-2"><em class="far fa-star"></em></label>
+										<input id="star-1" type="radio" name="rating" value="1">
+										<label for="star-1"><em class="far fa-star"></em></label>
+									</div>
+								</div>
+							</td>
+							<td class="content">
+								<textarea name="" cols="30" rows="10" placeholder="Để lại đánh giá của bạn"></textarea>
+								<div class="send-btn"><a href=""> Gửi</a></div>
+							</td>
+						</tr>
+						<tr class="item"> </tr>
+						<tr class="item"> </tr>
+						<tr class="item"> </tr>
+						<tr class="item"> 
+							<td>
+								<div class="rating-box">
+									<div class="rating-container">
+										<input id="star-5" type="radio" name="rating" value="5">
+										<label for="star-5"><em class="far fa-star"></em></label>
+										<input id="star-4" type="radio" name="rating" value="4">
+										<label for="star-4"><em class="far fa-star"></em></label>
+										<input id="star-3" type="radio" name="rating" value="3">
+										<label for="star-3"><em class="far fa-star"></em></label>
+										<input id="star-2" type="radio" name="rating" value="2">
+										<label for="star-2"><em class="far fa-star"></em></label>
+										<input id="star-1" type="radio" name="rating" value="1">
+										<label for="star-1"><em class="far fa-star"></em></label>
+									</div>
+								</div>
+							</td>
+							<td class="content">
+								<textarea name="" cols="30" rows="10" placeholder="Để lại đánh giá của bạn"></textarea>
+								<div class="send-btn"><a href=""> Gửi</a></div>
+							</td>
+						</tr>
+					</table>
+					<div id="pagination-container"></div>
+					<div class="get-info-btn"> <a id="modal" href="javascript:void(0)">nhận thông tin tư vấn</a></div>
+					<div class="modal">
+						<div class="modal-overlay"></div>
+						<div class="modal-body"> 
+							<div class="close-btn"> <em class="mdi mdi-close"></em></div>
+							<div class="modal-inner"> 
+								<form class="form" action="">
+									<h4>Vui lòng nhập đầy đủ thông tin cá nhân</h4>
+									<div class="form-group">
+										<label for="">Tên đầy đủ: </label>
+										<input type="text" name="">
+									</div>
+									<div class="form-group">
+										<label for="">Email:</label>
+										<input type="text" name="">
+									</div>
+									<div class="form-group">
+										<label for="">Số điện thoại: </label>
+										<input type="text" name="">
+									</div>
+									<div class="form-group">
+										<label for="">Địa chỉ: </label>
+										<input type="text" name="">
+									</div>
+									<div class="form-group">
+										<label for="">Thành phố: </label>
+										<input type="text" name="">
+									</div>
+									<div class="form-group">
+										<label for="">Tình trạng da của bạn: </label>
+										<input type="text" name="">
+									</div>
+									<button type="submit">Gửi</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="info-wrapper">
+						<div class="info"> 
+							<p>Murad là thương hiệu chăm sóc và đặc trị da cấp độ Bác sĩ với những công thức kê toa được phát triển độc quyền bởi giáo sư – bác sĩ Howard Murad. Xuyên suốt hành trình 30 năm tạo dựng và phát triển không ngừng, thương hiệu bác sĩ Murad nhận được sự tín nhiệm của hơn 30.000 chuyên gia uy tín hàng đầu trong lĩnh vực Da liễu và hàng loạt ngôi sao trên toàn thế giới tin dùng nhiều năm.</p>
+							<p>Để được tư vấn, khám và siêu âm da miễn phí, quý khách hàng có thể đến trực tiếp showroom Murad chính hãng tại Việt Nam:</p>
+							<div class="address"> 
+								<div class="icon"><em class="mdi mdi-map-marker"> </em></div><span>397B Võ Văn Tần, Phường 5, Quận 3, TP.Hồ Chí Minh</span>
+							</div>
+						</div>
+						<div class="contact"> 
+							<p>Để được hỗ trợ trực tiếp bởi chuyên viên tư vấn, liên hệ Hotline tổng đài:</p>
+							<div class="call"> <img src="./img/icon-call.png" alt="">
+								<div class="phone"> <a href="tel: 1900633345">1900 633 345</a></div>
+							</div>
+							<p>Hoặc Hệ thống Đại lý ủy quyền trên toàn quốc Ngoài ra, thông tin chi tiết khuyến mãi và mua hàng có thể xem tại:</p>
+							<ul class="contact-address"> 
+								<li> 
+									<div class="icon"><em class="mdi mdi-web"></em></div><a href="">www.muradvietnam.vn</a>
+								</li>
+								<li> 
+									<div class="icon"><em class="mdi mdi-facebook"></em></div><a href="">www.facebook.com/murad.com.vn/</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer class="lmp-footer">
-			<div class="top-wrapper lmp-section" setBackground="./img/bg_footer.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 content-wrapper">
-							<nav> 
-								<h2 class="main-title">contact us</h2>
-								<li>
-									<div class="lh"><em class="mdi mdi-map-marker"></em>
-										<p>Địa chỉ đang được chúng tôi cập nhật</p>
-									</div>
-								</li>
-								<li>
-									<div class="lh"><em class="fas fa-phone-volume"></em>
-										<p>0399.508.8777 </p>
-									</div>
-								</li>
-								<li>
-									<div class="lh"><em class="mdi mdi-email"></em>
-										<p>info@landshub.com</p>
-									</div>
-								</li>
-								<li>
-									<div class="lh"> <em class="mdi mdi-web"></em>
-										<p><a href="">www.landshub.me</a></p>
-									</div>
-								</li>
-							</nav>
-						</div>
-						<div class="col-lg-8 form-contact"> 
-							<div class="row"> 
-								<div class="col-lg-6 col-12 inp__left">
-									<input class="inp" type="text" name="" placeholder="Họ tên">
-									<input class="inp" type="text" name="" placeholder="Phone">
-									<input class="inp" type="text" name="" placeholder="Email">
-								</div>
-								<div class="col-lg-6 col-12 inp__right"> 
-									<textarea name="" cols="30" rows="10" placeholder="nội dung"> </textarea>
-									<input type="submit" value="Gửi">
-								</div>
-							</div>
-						</div>
+		<footer class="footer"> 
+			<div class="container"> 
+				<div class="newsletter-wrap">
+					<div class="newsletter">
+						<input type="text" placeholder="Đăng ký nhận bản tin...">
+						<button class="signup-btn">Đăng ký   </button>
 					</div>
-					<div class="em mdi mdi-chevron-up" id="gotop"> </div>
+				</div>
+				<div class="menu-footer-wrap">
+					<div class="col-ft">
+						<nav class="menu">
+							<h3>sản phẩm</h3>
+							<ul>
+								<li><a href="">Sữa rửa mặt</a></li>
+								<li><a href="">toner </a></li>
+								<li><a href="">serum điều trị </a></li>
+								<li><a href="">kem dưỡng ẩm/ bảo vệ</a></li>
+								<li><a href="">mắt môi</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-ft">
+						<nav class="menu">
+							<h3>sản phẩm</h3>
+							<ul> 
+								<li><a href="">mặt nạ</a></li>
+								<li><a href="">sản phẩm đặt biệt </a></li>
+								<li><a href="">chống nắng</a></li>
+								<li><a href="">professional </a></li>
+								<li><a href="">viên uống</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-ft">
+						<nav class="menu">
+							<h3>giải pháp</h3>
+							<ul> 
+								<li><a href="">lão hóa do di truyền </a></li>
+								<li><a href="">lão hóa do nội tiết</a></li>
+								<li><a href="">nám và lão hóa theo môi trường </a></li>
+								<li><a href="">giải pháp cho da mụn</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-ft">
+						<nav class="menu">
+							<h3>về murad</h3>
+							<ul> 
+								<li><a href="">blog </a></li>
+								<li><a href="">về murad</a></li>
+								<li><a href="">tin tức, sự kiện</a></li>
+								<li><a href="">khuyến mãi </a></li>
+								<li> <a href="">gặp gỡ chuyên gia murad</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-ft">
+						<nav class="menu">
+							<ul class="social-icon">
+								<li><a class="fb" href="#"><em class="fab fa-facebook-f"></em></a></li>
+								<li><a class="twt" href="#"><em class="fab fa-twitter"></em></a></li>
+								<li> <a href=""><em class="mdi mdi-linkedin"></em></a></li>
+								<li> <a href=""><em class="fab fa-instagram"></em></a></li>
+								<li><a class="ytb" href="#"><em class="fab fa-youtube"></em></a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
-			<div class="bottom-wrapper">
-				<div class="main-wrapper">
-					<div class="left-wrapper">
-						<div class="copyright-wrapper"><p>Copyright © 2019 LandsHub. <a href="">Website designed </a>by <a href="">Me</a></p> </div>
-						<div class="list-page-wrapper">
-							<ul>
-								<li><a href="#">Quy định sử dụng</a></li>
-								<li><a href="#">Điều kiện và điều khoản sử dụng</a></li>
-							</ul>
+			<div class="copyright-wrap">
+				<div class="container"> 
+					<div class="copyright">
+						<div class="left">
+							<p>Copyright © 2017 - 2019 Murad Vietnam All Rights Reserved.</p>
 						</div>
-					</div>
-					<div class="right-wrapper">
-						<div class="social-wrapper">
-							<ul>
-								<li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-								<li><a href="#"><em class="fab fa-twitter"></em></a></li>
-								<li><a href="#"><em class="fab fa-youtube"></em></a></li>
-								<li><a href="#"><em class="fab fa-instagram"></em></a></li>
-							</ul>
-						</div>
+						<ul class="right">
+							<li><a href="#">Điều khoản </a></li>
+							<li><a href="#">Chính sách bảo mật</a></li>
+							<li> <a href="">sitemap</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>

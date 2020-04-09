@@ -1,89 +1,52 @@
 header.header 
-    .header__top
-        .container.p-0
-            .wrapper
-                .call 
-                    em.mdi.mdi-phone 
-                    | 0399.508.877 
-                .button-account 
-                    a.register(data-fancybox data-animation-duration="700" data-src="#Modal2" href="javascript:;") 
-                        em.mdi.mdi-account-plus-outline
-                        | Đăng ký
-                    a.login(data-fancybox data-animation-duration="700" data-src="#Modal1" href="javascript:;") 
-                        em.mdi.mdi-login-variant
-                        | Đăng nhập 
-                    .account-after
-                        a( class="user")
-                            .img
-                                img(src="./img/1.jpg", alt="") 
-                            p le ba vu
-                        ul.list-item
-                            li 
-                                a demo 
-                            li 
-                                a demo
-                            
-                #Modal1(style='display: none;max-width:900px;')
-                    .sign-up
-                        form.sign-up__form(action='javascript:void(0)')
-                            .sign-up__content
-                                h2.sign-up__title Đăng nhập
-                                input.sign-up__inp(type='email' placeholder='Email' required='required')
-                                input.sign-up__inp(type='password' placeholder='Mật khẩu' required='required')
-                                span.forgot__password Quên mật khẩu 
-                                    a(href="") nhấn vào đây
-                            .sign-up__buttons
-                                a.btn.btn--register(href="javascript:;") Tạo tài khoản
-                                button.btn.btn--signin(type='submit') Đăng nhập
-                #Modal2(style='display: none;max-width:900px;')
-                    .sign-up
-                        form.sign-up__form(action='javascript:void(0)')
-                            .sign-up__content
-                                h2.sign-up__title Đăng ký
-                                input.sign-up__inp(type='text' placeholder='Tên đăng nhập' required='required')
-                                input.sign-up__inp(type='email' placeholder='Email' required='required')
-                                input.sign-up__inp(type='password' placeholder='Mật khẩu' required='required')
-                                input.sign-up__inp(type='password' placeholder='Nhập lại mật khẩu' required='required')
-                                .checkbox 
-                                    input(type="radio", name="")
-                                    span Bằng cách nhấp vào Đăng ký
-                                        a(href="") bạn đồng ý với Điều khoản, Chính sách của chúng tôi.
-                    .sign-up__buttons
-                        button.btn.btn--signup(type='submit') Đăng ký
-                        a.btn.social-button(href="") 
-                            em.fas.fa-facebook-f
-                    span.bottom Bạn đã có tài khoản. 
-                        a(data-fancybox data-animation-duration="700" data-src="#Modal1" href="javascript:;") Đăng nhập
-    .header__bottom 
-        .container.main-wrap 
-            .left
-                a(href="./").logo
-                    img(src="./img/logo.png", alt="")
-            .right
-                .main-menu 
-                    ul 
-                        li
-                            a(href="") Trang chủ 
-                        li.has-dropdown 
-                            a(href="") Dự án 
-                            ul.nav-sub 
-                                li 
-                                    a demo 
-                                li 
-                                    a demo
-                        li 
-                            a(href="") Thuê 
-                        li 
-                            a(href="") Bán
-                        li 
-                            a(href="") Tin tức 
-                        li 
-                            a(href="") Ký gửi 
-                        li 
-                            a(href="") Liên hệ
-            .button-post 
-                a(href="") Đăng tin
-            .mobile-toggle
-                .button
-    .mobile-menu
-    .back-drop 
+    .head-wrap
+        .container
+            .head
+                .head__buy-here 
+                    a(href="#") Chọn nơi bạn muốn mua hàng 
+                .head__hotline 
+                    a(href="tel:1900633345") 
+                        i.mdi.mdi-phone
+                        | 1900633345
+                .head__searchbox 
+                    input(type="text", name="" placeholder="Tìm kiếm") 
+                    button 
+                        i.fas.fa-search 
+                .head__language 
+                    a(href="#") English
+                .head__cart
+                    a(href="") 
+                        img(src="./img/icon-cart.png", alt="")
+                        span shop online 
+    .header-bottom
+        .container
+            .menu-wrapper
+                .toggle-btn
+                    .button
+                .logo
+                    a(href="")
+                        img(src="./img/logo-murad.jpg", alt="")
+                nav.menu 
+                    ul.menu__list 
+                        li.menu__item
+                            a.active.menu__link(href="") trang chủ 
+                        li.menu__item
+                            a.menu__link(href="") về murad
+                        li.menu__item
+                            a.menu__link(href="") sản phẩm 
+                        li.menu__item 
+                            a.menu__link(href="#") giải pháp 
+                        li.menu__item
+                            a.menu__link(href="") tin tức 
+                        li.menu__item
+                            a.menu__link(href="") khuyến mãi
+                        li.menu__item
+                            a.menu__link(href="") blog 
+                        li.menu__item
+                            a.menu__link(href="") liên hệ
+                .button-search 
+                    i.fas.fa-search 
+                .nav-mobile 
+                    .head menu
+                .search-wrap
+                .back-drop

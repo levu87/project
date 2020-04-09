@@ -1,0 +1,251 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="CanhCam.Web.layout" %>
+
+<!DOCTYPE html>
+<html id="Html1" runat="server">
+<head id="Head1" runat="server">
+    <title></title>
+    <portal:MetaContent ID="MetaContent" runat="server" />
+    <%-- JQueryUIThemeName themes: 
+	base, black-tie, blitzer, cupertino, dark-hive, dot-luv, eggplant, excite-bike, flick, hot-sneaks,
+	humanity, le-frog, mint-choc, overcast, pepper-grinder,
+	redmond, smoothness, south-street, start, sunny, swanky-purse, trontastic, ui-darkness, ui-lightness, vader
+    --%>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false" JQueryUIThemeName="smoothness" />
+    <portal:Favicon ID="Favicon1" runat="server" />
+    <portal:ScriptLoader ID="ScriptLoader1" runat="server" />
+    <portal:SkinFolderScript ID="SkinFolderScript1" runat="server" ScriptFileName="js/plugins.min.js" AddToCombinedScript="true" />
+    <portal:SkinFolderScript ID="SkinFolderScript2" runat="server" ScriptFileName="js/customize.min.js" AddToCombinedScript="true" />
+    <portal:SkinFolderScript ID="SkinFolderScript3" runat="server" ScriptFileName="js/canhcam.js" AddToCombinedScript="true" />
+    <portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&amp;display=swap" rel="stylesheet">
+
+    <!--*********************************************************************************************-->
+    <!-- Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn                          -->
+    <!-- 156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.                                 -->
+    <!-- Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn                    -->
+    <!-- Facebook: https://www.facebook.com/canhcam.vn                                               -->
+    <!--*********************************************************************************************-->
+</head>
+<body id="Body" runat="server" class="canhcam">
+    <portal:FacebookSdk ID="fbsdk" runat="server" />
+    <portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
+    <form id="frmMain" runat="server">
+        <asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+        <asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+        <asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
+        <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+        <div id="wrapper">
+            <header class="header"> 
+                <div class="head-wrap">
+                    <div class="container">
+                        <div class="head">
+                            <div class="head__buy-here"> <a href="#">Chọn nơi bạn muốn mua hàng </a></div>
+                            <div class="head__hotline"> <a href="tel:1900633345"> <i class="mdi mdi-phone"></i>1900633345</a></div>
+                            <div class="head__searchbox"> 
+                                <input type="text" name="" placeholder="Tìm kiếm">
+                                <button> <i class="fas fa-search"> </i></button>
+                            </div>
+                            <div class="head__language"> <a href="#">English</a></div>
+                            <div class="head__cart"><a href=""> <img src="./img/icon-cart.png" alt=""><span>shop online </span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="container">
+                        <div class="menu-wrapper">
+                            <div class="toggle-btn">
+                                <div class="button"></div>
+                            </div>
+                            <div class="logo"><a href=""><img src="./img/logo-murad.jpg" alt=""></a></div>
+                            <nav class="menu"> 
+                                <ul class="menu__list"> 
+                                    <li class="menu__item"><a class="active menu__link" href="">trang chủ </a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">về murad</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">sản phẩm </a></li>
+                                    <li class="menu__item"> <a class="menu__link" href="#">giải pháp </a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">tin tức </a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">khuyến mãi</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">blog </a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">liên hệ</a></li>
+                                </ul>
+                            </nav>
+                            <div class="button-search"> <i class="fas fa-search"> </i></div>
+                            <div class="nav-mobile"> 
+                                <div class="head">menu</div>
+                            </div>
+                            <div class="search-wrap"></div>
+                            <div class="back-drop"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
+					<%--<portal:PageMenu ID="PageMenu1" IsSubMenu="true" MaxDataRenderDepth="-1" StartingNodeOffset="-1" xsltFileName="LeftMenu.xslt" runat="server" />--%>
+					<asp:ContentPlaceHolder ID="leftContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins" SkinID="pnlPlain">
+					<%--<portal:Breadcrumbs ID="Breadcrumbs" WrapperCssClass="breadcrum" Separator="<li class='separate'>»</li>" runat="server"></portal:Breadcrumbs>--%>
+					<asp:ContentPlaceHolder ID="mainContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="rightContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+            </main>
+            <footer class="footer"> 
+                <div class="container"> 
+                    <div class="newsletter-wrap">
+                        <div class="newsletter">
+                            <input type="text" placeholder="Đăng ký nhận bản tin...">
+                            <button class="signup-btn">Đăng ký   </button>
+                        </div>
+                    </div>
+                    <div class="menu-footer-wrap">
+                        <div class="col-ft">
+                            <nav class="menu">
+                                <h3>sản phẩm</h3>
+                                <ul>
+                                    <li><a href="">Sữa rửa mặt</a></li>
+                                    <li><a href="">toner </a></li>
+                                    <li><a href="">serum điều trị </a></li>
+                                    <li><a href="">kem dưỡng ẩm/ bảo vệ</a></li>
+                                    <li><a href="">mắt môi</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-ft">
+                            <nav class="menu">
+                                <h3>sản phẩm</h3>
+                                <ul> 
+                                    <li><a href="">mặt nạ</a></li>
+                                    <li><a href="">sản phẩm đặt biệt </a></li>
+                                    <li><a href="">chống nắng</a></li>
+                                    <li><a href="">professional </a></li>
+                                    <li><a href="">viên uống</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-ft">
+                            <nav class="menu">
+                                <h3>giải pháp</h3>
+                                <ul> 
+                                    <li><a href="">lão hóa do di truyền </a></li>
+                                    <li><a href="">lão hóa do nội tiết</a></li>
+                                    <li><a href="">nám và lão hóa theo môi trường </a></li>
+                                    <li><a href="">giải pháp cho da mụn</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-ft">
+                            <nav class="menu">
+                                <h3>về murad</h3>
+                                <ul> 
+                                    <li><a href="">blog </a></li>
+                                    <li><a href="">về murad</a></li>
+                                    <li><a href="">tin tức, sự kiện</a></li>
+                                    <li><a href="">khuyến mãi </a></li>
+                                    <li> <a href="">gặp gỡ chuyên gia murad</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-ft">
+                            <nav class="menu">
+                                <ul class="social-icon">
+                                    <li><a class="fb" href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                    <li><a class="twt" href="#"><em class="fab fa-twitter"></em></a></li>
+                                    <li> <a href=""><em class="mdi mdi-linkedin"></em></a></li>
+                                    <li> <a href=""><em class="fab fa-instagram"></em></a></li>
+                                    <li><a class="ytb" href="#"><em class="fab fa-youtube"></em></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-wrap">
+                    <div class="container"> 
+                        <div class="copyright">
+                            <div class="left">
+                                <p>Copyright © 2017 - 2019 Murad Vietnam All Rights Reserved.</p>
+                            </div>
+                            <ul class="right">
+                                <li><a href="#">Điều khoản </a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li> <a href="">sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="/Data/Sites/1/langdingpage9/js/core.min.js"></script>
+            <script src="/Data/Sites/1/langdingpage9/js/main.min.js"></script>
+            <%--<ul>
+                <portal:welcomemessage id="WelcomeMessage" runat="server" renderaslistitem="true" listitemcss="firstnav" />
+                <portal:homelink id="HomeLink" runat="server" renderaslistitem="true" />
+                <portal:mobileskinlink id="mobileskin" runat="server" renderaslistitem="true" />
+                <portal:sitemaplink id="SiteMapLink2" runat="server" cssclass="sitelink" renderaslistitem="true" />
+                <portal:searchinput id="SearchInput2" linkonly="True" renderaslistitem="true" runat="server" />
+                <portal:memberlistlink id="MemberListLink" runat="server" renderaslistitem="true" />
+                <portal:mypagelink id="MyPageLink1" runat="server" renderaslistitem="true" />
+                <portal:userprofilelink id="UserProfileLink" runat="server" renderaslistitem="true" />
+                <portal:mailboxlink id="MailboxLink1" runat="server" renderaslistitem="true" />
+                <portal:registerlink id="RegisterLink" runat="server" renderaslistitem="true" />
+                <portal:loginlink id="LoginLink" runat="server" renderaslistitem="true" />
+                <portal:logoutlink id="LogoutLink" runat="server" renderaslistitem="true" />
+            </ul>--%>
+        </div>
+        <portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav>
+                        <ul class="nav navbar-nav listmenu">
+                            <portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true" runat="server" />
+                            <portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open" RenderAsListItem="true" runat="server" />
+                            <portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog" RenderAsListItem="true" runat="server" />
+                            <portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+                            <portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true" runat="server" />
+                            <portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+                            <li>
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label class="sr-only">Mode</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#pullmenucms").click(function (e) {
+                        e.preventDefault();
+                        if ($(this).parents('.cmsadminpanel').hasClass('toggled')) { ShowToolbar(); Set_Cookie('toolbarOpenState', 'open'); }
+                        else { HideToolbar(); Set_Cookie('toolbarOpenState', 'closed'); }
+                    });
+                    var openState = Get_Cookie('toolbarOpenState');
+                    if (openState != null) { if (openState == 'closed') { HideToolbar(); } if (openState == 'open') { ShowToolbar(); } }
+                });
+                function HideToolbar() { $('.cmsadminpanel').addClass("toggled"); $('.fa-chevron-circle-right').addClass('fa-rotate-180'); }
+                function ShowToolbar() { $('.cmsadminpanel').removeClass("toggled"); $('.fa-chevron-circle-right').removeClass('fa-rotate-180'); }
+            </script>
+        </portal:AutoHidePanel>
+        <portal:Woopra ID="woopra11" runat="server" />
+    </form>
+</body>
+</html>

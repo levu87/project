@@ -7,7 +7,7 @@
 	],
 	"js": [
 		"bower_components/jquery/dist/jquery.min.js",
-		"bower_components/paginationjs/dist/pagination.min.js",
+		"bower_components/simplePagination/jquery.simplePagination.js",
 		"bower_components/aos/dist/aos.js",
 		"bower_components/fancybox/dist/jquery.fancybox.js",
 		"bower_components/swiper/dist/js/swiper.min.js",
@@ -21,12 +21,13 @@
 		"bower_components/fancybox/dist/jquery.fancybox.css",
 		"src/_plugins/font.css",
 		"src/_plugins/grid.css",
-		"bower_components/paginationjs/dist/pagination.css",
 		"bower_components/summernote/summernote.css",
 		"bower_components/summernote/summernote-bs4.css",
 		"bower_components/summernote/summernote-lite.css",
 		"bower_components/swiper/dist/css/swiper.min.css",
-		"bower_components/aos/dist/aos.css"
+		"bower_components/aos/dist/aos.css",
+		"bower_components/simplePagination/simplePagination.css"
+
 	]
 }
 
